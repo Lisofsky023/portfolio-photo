@@ -1,0 +1,68 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box; /* Chrome, Safari, iOS, Edge */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer */
+  display: flex;
+  height: calc(100vh - 150px);
+}
+
+.chat {
+  display: -webkit-box; /* Chrome, Safari, iOS, Edge */
+  display: -moz-box; /* Firefox */
+  display: -ms-flexbox; /* Internet Explorer */
+  display: flex;
+  -webkit-box-orient: vertical; /* Chrome, Safari, iOS, Edge */
+  -moz-box-orient: vertical; /* Firefox */
+  -webkit-box-direction: normal; /* Chrome, Safari, iOS, Edge */
+  -moz-box-direction: normal; /* Firefox */
+  -ms-flex-direction: column; /* Internet Explorer */
+  flex-direction: column;
+  height: 100%;
+}
+
+.header, .footer {
+  height: 50px;
+  min-height: 50px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.left-panel {
+  width: 200px;
+  overflow-y: auto;
+  background-color: #f2f2f2;
+}
+
+.main-panel {
+  -webkit-box-flex: 1; /* Chrome, Safari, iOS, Edge */
+  -moz-box-flex: 1; /* Firefox */
+  -ms-flex: 1; /* Internet Explorer */
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.participant-list, .message-list {
+  padding: 10px;
+}
+
+.footer {
+  height: 100px;
+  min-height: 100px;
+  background-color: #ccc;
+  text-align: center;
+}
+
